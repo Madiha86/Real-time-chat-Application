@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "FinalYearProChatApp",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "S3DeploymentBucket": "amplify-finalyearprochatapp-staging-64652-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/37ddfabc80eaa401137595e8e1cd642095386a2a"
+}

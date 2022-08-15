@@ -1,0 +1,27 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-finalyearprochatapp-staging-64652-authRole",
+      "UnauthRoleArn": "arn:aws:iam::011559729687:role/amplify-finalyearprochatapp-staging-64652-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::011559729687:role/amplify-finalyearprochatapp-staging-64652-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-finalyearprochatapp-staging-64652-deployment",
+      "UnauthRoleName": "amplify-finalyearprochatapp-staging-64652-unauthRole",
+      "StackName": "amplify-finalyearprochatapp-staging-64652",
+      "StackId": "arn:aws:cloudformation:us-east-1:011559729687:stack/amplify-finalyearprochatapp-staging-64652/d6ee6130-b7d0-11ec-87e7-0a6265fbc5db",
+      "AmplifyAppId": "d2br9ge57570uf",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-finalyearprochatapp-staging-64652-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "FinalYearProChatApp": {}
+      },
+      "function": {
+        "FinalYearProChatAppPostConfirmation": {
+          "deploymentBucketName": "amplify-finalyearprochatapp-staging-64652-deployment",
+          "s3Key": "amplify-builds/FinalYearProChatAppPostConfirmation-75564f4f58454b4c5042-build.zip"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "chattify",
+    "slug": "chattify",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/fypicon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/fyp.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3777f0"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.fyp.chattify",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    }
+  }
+}

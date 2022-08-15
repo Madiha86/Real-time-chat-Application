@@ -1,0 +1,136 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-finalyearprochatapp-staging-64652-authRole",
+      "UnauthRoleArn": "arn:aws:iam::011559729687:role/amplify-finalyearprochatapp-staging-64652-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::011559729687:role/amplify-finalyearprochatapp-staging-64652-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-finalyearprochatapp-staging-64652-deployment",
+      "UnauthRoleName": "amplify-finalyearprochatapp-staging-64652-unauthRole",
+      "StackName": "amplify-finalyearprochatapp-staging-64652",
+      "StackId": "arn:aws:cloudformation:us-east-1:011559729687:stack/amplify-finalyearprochatapp-staging-64652/d6ee6130-b7d0-11ec-87e7-0a6265fbc5db",
+      "AmplifyAppId": "d2br9ge57570uf",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-finalyearprochatapp-staging-64652-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    }
+  },
+  "auth": {
+    "FinalYearProChatApp": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "FinalYearProChatAppPostConfirmation",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        }
+      ],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "output": {
+        "UserPoolId": "us-east-1_zhH7nEsEG",
+        "AppClientIDWeb": "m6edr1vuqo2mkibqhs2q6gpn4",
+        "AppClientID": "6k8pk2aiq9vi07fg6849avn997",
+        "IdentityPoolId": "us-east-1:2aeafdf5-5e8b-4969-afb8-6bd2abb30b58",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:011559729687:userpool/us-east-1_zhH7nEsEG",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "FinalYearProChatApp"
+      },
+      "lastPushTimeStamp": "2022-07-15T14:49:02.527Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-finalyearprochatapp-staging-64652-deployment/amplify-cfn-templates/auth/FinalYearProChatApp-cloudformation-template.json",
+        "logicalId": "authFinalYearProChatApp"
+      }
+    }
+  },
+  "api": {
+    "FinalYearProChatApp": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "74vjenx5lrdz7lmjexwlbdn6yq",
+        "GraphQLAPIEndpointOutput": "https://nl3d4qvjsrf3llieqtqxqvrhha.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-sd4ibiuiene4za2nr5wbtae3yq"
+      },
+      "dependsOn": [],
+      "lastPushTimeStamp": "2022-07-15T14:49:04.161Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-finalyearprochatapp-staging-64652-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiFinalYearProChatApp"
+      },
+      "lastPushDirHash": "5wW1F+RoC8jy3CXMls445q730cY="
+    }
+  },
+  "function": {
+    "FinalYearProChatAppPostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:011559729687:function:FinalYearProChatAppPostConfirmation-staging",
+        "Name": "FinalYearProChatAppPostConfirmation-staging",
+        "LambdaExecutionRole": "FinalYearProChatAppPostConfirmation-staging"
+      },
+      "lastPushTimeStamp": "2022-07-15T14:49:02.604Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-finalyearprochatapp-staging-64652-deployment/amplify-cfn-templates/function/FinalYearProChatAppPostConfirmation-cloudformation-template.json",
+        "logicalId": "functionFinalYearProChatAppPostConfirmation"
+      },
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-finalyearprochatapp-staging-64652-deployment",
+        "s3Key": "amplify-builds/FinalYearProChatAppPostConfirmation-75564f4f58454b4c5042-build.zip"
+      }
+    }
+  },
+  "storage": {
+    "s3312836d3": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "BucketName": "finalyearprochatapp2cd43c5360b1416c9a0884a61bc664652-staging",
+        "Region": "us-east-1"
+      },
+      "lastPushTimeStamp": "2022-07-15T14:49:02.676Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-finalyearprochatapp-staging-64652-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storages3312836d3"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "trigger": true,
+  "modules": [
+    "custom"
+  ],
+  "parentResource": "FinalYearProChatApp",
+  "functionName": "FinalYearProChatAppPostConfirmation",
+  "resourceName": "FinalYearProChatAppPostConfirmation",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "C:\\snapshot\\node_modules\\@aws-amplify\\amplify-category-auth\\provider-utils\\awscloudformation\\triggers\\PostConfirmation",
+  "triggerTemplate": "PostConfirmation.json.ejs",
+  "triggerEventPath": "PostConfirmation.event.json",
+  "roleName": "FinalYearProChatAppPostConfirmation",
+  "skipEdit": true,
+  "enableCors": false
+}

@@ -1,0 +1,13 @@
+{
+  "resourceName": "s3312836d3",
+  "policyUUID": "312836d3",
+  "bucketName": "finalyearprochatapp2cd43c5360b1416c9a0884a61bc6",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
